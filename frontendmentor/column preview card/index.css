@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   font-family:'Lexend Deca', sans-serif;  
+   font-size: 15px;
+   margin: auto;
+   min-height: 100vh;
+   max-width: 90rem;
+   color: white;
+
+}
+
+#hero h2 {
+    font-family:'Big Shoulders Display', cursive;  
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 60rem;
+    min-height: 100vh;
+    margin: auto;
+}
+
+h2{
+    font-size: 36px;
+    margin: 1.25rem 0;
+}
+
+p{
+   font-weight: 400;
+   color: white;
+   opacity:0.7;
+}
+
+#hero{
+    display: flex;
+    flex-direction: row;
+    height: 34.375rem;
+    line-height: 1.75rem;
+    line-break: normal;
+}
+
+#hero button{
+    margin-top: 6.25rem;
+    padding: 15px 10px;
+    width: 150px;
+    border-radius: 30px;
+    border: none;
+    font-family:'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.Sedans{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: hsl(31, 77%, 52%);
+    padding: 3.125rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.Suvs{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: hsl(184, 100%, 22%);
+    padding: 3.125rem;
+}
+
+.Luxury{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: hsl(179, 100%, 13%);
+    padding: 3.125rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.Sedans button{
+    color: hsl(31, 77%, 52%);
+}
+
+.Suvs button{
+    color:hsl(184, 100%, 22%)
+}
+.Luxury button{
+    color:hsl(179, 100%, 13%)
+}
+@media screen and (max-width: 375px) {
+#hero{
+    display: flex; 
+    flex-direction: column;   
+    margin: 1.25rem;
+}
+.Sedans{
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    border-bottom-left-radius: 0;
+}
+.Luxury{
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+    border-top-right-radius: 0; 
+}
+
+}
+
